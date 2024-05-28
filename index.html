@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" type="" href="img/shopping.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">MunchMate</a>
+      <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="searchBox" />
+        <label for="searchBox" class="fas fa-search"></label>
+      </form>
+      <div class="fas fa-shopping-cart" id="cart-icon"></div>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content"></div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">
+          <a href="payment.html">Pay-Now</a>
+        </button>
+        <i class="bx bx-x" id="close-cart"></i>
+      </div>
+    </header>
+    <!-- home section starts  -->
+    <section class="home" id="home">
+      <div class="image" data-aos="fade-down">
+        <img src="images/burgerr.jpg" alt="" />
+      </div>
+
+      <div class="content" data-aos="fade-up">
+        <h3>Food For You</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          explicabo eius inventore reprehenderit alias eos facilis, ipsa est
+          asperiores repellendus!
+        </p>
+        <a href="#" class="btn">explore now</a>
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!--menu section starts-->
+    <section class="shop container">
+      <h2 class="section-title">Order Food</h2>
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="images/Biryani.jpg" alt="" class="product-img" />
+          <h2 class="product-title">biryani</h2>
+          <span class="price">$40</span>
+          <img class="add-cart" src="images/add-cart.png" alt="" />
+        </div>
+
+        <div class="product-box">
+          <img src="images/GulabJamun.jpg" alt="" class="product-img" />
+          <h2 class="product-title">GULAB JAMUN</h2>
+          <span class="price">$70.90</span>
+          <img class="add-cart" src="images/add-cart.png" alt="" />
+        </div>
+
+        <div class="product-box">
+          <img src="images/PaneerTikka.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">PANEER TIKKA</h2>
+          <span class="price">$100</span>
+          <img class="add-cart" src="images/add-cart.png" alt="" />
+        </div>
+
+        <div class="product-box">
+          <img src="images/NonVegBurger.jpg" alt="" class="product-img" />
+          <h2 class="product-title">NON VEG BURGER</h2>
+          <span class="price">$80.50</span>
+          <img class="add-cart" src="images/add-cart.png"" alt="">
+        </div>
+
+        <div class="product-box">
+          <img src="images/VegBurger.jpg" alt="" class="product-img" />
+          <h2 class="product-title">VEG BURGER</h2>
+          <span class="price">$200</span>
+          <img class="add-cart" src="images/add-cart.png"" alt="">
+        </div>
+
+        <div class="product-box">
+          <img src="images/dosa.jpg" alt="" class="product-img" />
+          <h2 class="product-title">MASALA DOSA</h2>
+          <span class="price">$80.40</span>
+          <img class="add-cart" src="images/add-cart.png"" alt="">
+        </div>
+
+        <div class="product-box">
+          <img src="images/pasta.jpg" alt="" class="product-img" />
+          <h2 class="product-title">pasta</h2>
+          <span class="price">$28</span>
+          <img class="add-cart" src="images/add-cart.png" alt="" />
+        </div>
+
+        <div class="product-box">
+          <img src="images/Pizza.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">PIZZA</h2>
+          <span class="price">$70.89</span>
+          <img class="add-cart" src="images/add-cart.png" alt="" />
+        </div>
+        <!--
+             -->
+      </div>
+    </section>
+    <!--menu section ends-->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">client's <span>review</span></h1>
+      <div class="swiper-container review-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/pic-1.png" alt="" />
+            <h3>Parimal</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-2.png" alt="" />
+            <h3>Ruchi</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-3.png" alt="" />
+            <h3>Samyak</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-4.png" alt="" />
+            <h3>Sayli</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <form action="" data-aos="zoom">
+        <div class="inputBox">
+          <input type="text" placeholder="Name" data-aos="fade-up" />
+          <input type="email" placeholder="Email" data-aos="fade-up" />
+        </div>
+
+        <div class="inputBox">
+          <input type="text" placeholder="Phone No." data-aos="fade-up" />
+          <input type="text" placeholder="Subject" data-aos="fade-up" />
+        </div>
+
+        <textarea
+          placeholder="Your Message"
+          cols="30"
+          rows="10"
+          data-aos="fade-up"
+        ></textarea>
+
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- blog section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>What is bombay and hyderabadi biryani?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st Jan, 2024</a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>How many types of burger are there?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 24 Dec Jan, 2023</a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Did you know some facts about pizza?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 30 Nov, 2023 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <h3>our branches</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Pune </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Mumbai </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Banglore </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Hyderabad </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Nagpur </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> packages </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> pricing </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> contact </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelop"></i> munchmate@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> pune, india - 400104
+          </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 400,
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
